@@ -28,6 +28,8 @@
   %for section-numbered lemmas etc., use "numberwithinsect"
 
 \usepackage{microtype}%if unwanted, comment out or use option "draft"
+\usepackage[babel]{csquotes}
+\MakeAutoQuote{“}{”}
 
 \bibliographystyle{plain}%the recommended bibstyle
 
@@ -67,6 +69,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{todonotes}
+
+\frenchspacing
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%% begin of document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1109,14 +1113,42 @@ psychology research.
 \license
 %\abstractref[]{} % [] - URL, {} - reference description (a la thebibliography)
 %\abstractrefurl{} % preferrably DOI-based URL
-\todo{draft by Christoph; get Daniel's approval}Elsevier is concerned about fostering open science and digital scholarship in its numerous journals.  Examples include:
+Elsevier supports the storing, sharing, discovering, and using of research data. Elsevier established a research data policy based on the STM Brussels Declaration 2007\footnote{\url{http://www.stm-assoc.org/2007_11_01_Brussels_Declaration.pdf}} that “Raw research data should be made freely available to all researchers wherever possible” to help researchers to store, share, discover and use data.
+
+\noindent The following principles underpin Elsevier's data policy\footnote{\url{https://www.elsevier.com/about/company-information/policies/research-data}}:
 \begin{itemize}
-\item \emph{Cognition} applies a data sharing policy requiring every author to either provide a link to a data repository, or to submit supplementary data with their article.
-\item The \emph{Journal of Research in Personality} fosters transparency in the scientific process by requiring ``all authors [to] abide by standard principles of research conduct, including making data available to other researchers''.
-\item The implementation of the TOP guidelines (Transparency and Openness Promotion) is currently under evaluation.
-\item \emph{SoftwareX} is a new journal for getting software index, discoverable, accessible and cited.
-\item \emph{MethodsX} is a new journal to get method customization indexed, discoverable, accessible and cited.
+\item Research data should be made available free of charge to all researchers wherever possible and with minimal reuse restrictions.
+\item Researchers invest substantially to create and interpret data and others such as data archives, publishers, funders and institutions further add value and/or incur significant cost. In all such cases these contributions need to be recognized and valued.
+\item Expectations and practices around research data vary between disciplines and need to be taken into account.
+\item Platforms, publications, tools and services can enhance data by improving their discoverability, use, reuse, and citation.
+\item Standard identifiers, vocabularies, taxonomies, ontologies and entity resources enhance the discovery, management and use of data.
 \end{itemize}
+\noindent The following programs and pilots have been initiated:
+\begin{enumerate}
+\item \emph{Data-linking program}\footnote{\url{http://www.elsevier.com/databaselinkin}}\\
+Elsevier has an extensive program with 40+ leading domain-specific data repositories to interlink articles and data on ScienceDirect. This reciprocal linking aims to expand the availability of research data and improve the researcher workflow. Researchers – whether in the role of author or reader – benefit from both the increased discoverability of the data sets and seeing the data sets in the direct context of the research article. Linking through in-article accession numbers, data DOIs, or data banners are two examples on how this is being accomplished.
+\item \emph{Mendeley Data}\\
+Allows researchers to store their research data online, so it can be cited and shares as well as securely saved in an online repository. DOIs and versioning of datasets, in compliance in Force11 standards, ensure that data citations are always valid. Mendeley Data is currently in beta phase.
+\item \emph{In-article data visualization}
+  \begin{enumerate}
+  \item iPlots\footnote{\url{https://www.elsevier.com/books-and-journals/content-innovation/iplots}} – Displaying plot data in CSV format delivered by the author as supplementary material. Allows to access, explore, and download data behind plots.
+  \item 3D visualization tool\footnote{\url{http://www.elsevier.com/connect/bringing-3d-visualization-to-online-research-articles}} – The goal is to enable Elsevier authors to showcase their 3D data, and to provide ScienceDirect users with a means to view and interact with these author-provided small to massive 3D datasets on a large number of devices with no additional plug-in required. These devices include smartphones, tablets, laptops and desktop computers.
+  \end{enumerate}
+\item \emph{Open data and data profile}\footnote{\url{https://www.elsevier.com/about/open-science/research-data/open-data}}\\ Increasing access to research data helps researchers to validate and build upon important discoveries and observations. With Elsevier's latest Open Data pilot we are providing authors with the opportunity to make their supplementary files with raw research data available open access on ScienceDirect.
+\item \emph{Data micro-articles}\\
+Data journals, and data sections in existing journals, enable authors to have their research data peer-reviewed and cited. It will also make sure readers can find, use and analyze the data hosted in external databases or submitted as supplementary data. Examples of recently launched data journals are Genomics Data and Data in Brief.
+\item \emph{Standards bodies and working groups}
+  \begin{enumerate}
+  \item Joint Declaration of Data Citation Principles: best-practices to cite data in articles for better linking and credit
+  \item Research Data Alliance \& ICSU World Data System: Tackling a broad range of interconnected issues around Data Publication (workflows, bibliometrics, cost recovery, services)
+  \end{enumerate}
+\item \emph{Lay Summaries}\\
+Making scientific research results accessible to the public by posting for each published article in the journal “Burnout Research” a lay summary explaining the main research findings. Burnout Research is one of Elsevier's 270 open access titles and therefor freely available on the web (link to lay summaries).
+\item \emph{STM Digest}\\
+\footnote{\url{http://www.elsevier.com/social-sciences/economics-and-finance/early-career-researchers}} STM Digest features lay summaries of science papers with societal impact. It is a collection of summaries of original research papers with social impact or a focus on policy. These summaries have the potential to make research more accessible, improve engagement in science, and benefit wider society. The initiative is a collaboration between Elsevier's STM Journals group and the cloud-based research management and social collaboration platform, Mendeley.
+\item \emph{Atlas}\footnote{\url{https://www.elsevier.com/atlas/home}}\\
+With over 1,800 journals publishing articles from across science, technology and health, Elsevier's mission is to share some of the stories that matter. Each month Atlas showcases research that could significantly impact people's lives around the world or has already done so. Bringing wider attention to this research will hopefully go some way to ensuring its successful implementation. Each month selecting a single article to be awarded “The Atlas” is facilitated by the Advisory Board. The winning research is presented in a lay-friendly, story format alongside interviews, expert opinions, and multimedia to reach a wide global audience.
+\end{enumerate}
 
 %-------------------------------------------------------
 %\newpage
@@ -1239,22 +1271,21 @@ Systems is hijacking ORCID for ordinary citizens, to improve their quality of li
 through the use of new sensor data and to augment the growth of local 
 community connections. 
 
- \end{document}
-
 %-------------------------------------------------------
 %\newpage
-\abstracttitle{}
+\abstracttitle{PsychOpen – The European Open-Access Publishing Platform for Psychology}
 \abstractauthor[ Erich Weichselgartner ]{Erich Weichselgartner (ZPID – Trier, DE)}
 \license
 %\abstractref[]{} % [] - URL, {} - reference description (a la thebibliography)
 %\abstractrefurl{} % preferrably DOI-based URL
 
-\todo{draft by Christoph; get Erich's approval}ZPID, the Leibniz Institute for Psychology Information, is a research support organization in the field of psychology, focusing on the German-speaking countries.
-ZPID generally aims at supporting scholarly communication from ideas to data collection, data analysis, informal communication, publishing, to finally the discovery of published results via bibliographic databases, giving rise to new ideas.
-Recent initiatives particularly focus on making research results, including publications as well as data, accessible to other psychologists, to avoid the waste of research money by redoing studies that exist already, and to improve replicability.
-In particular, the ZPID's PsychData service encourages and enables psychologists to share data, and the PsychOpen open access publishing service provides innovations such as multilingual publishing for the European community and the extraction of rich metadata from articles and supplemental material.
-It is planned to extend PsychOpen using semantic technology, enabling, e.g., concept-based queries.
-Further ZPID services include the PubPsych information retrieval system and the PsychAuthors author profiles database.
+The European Psychology Publication Platform PsychOpen was created because extensive research in the European scientific community had clearly shown a demand for open access publishing in psychology. The reasons were manifold. For one, there were only a handful of quality controlled open access journals in psychology in 2011. Secondly, a survey from 493 participants from 24 countries had revealed six main concerns with traditional publishing in psychology: (1) Language, (2) review process, (3) manuscript handling, (4) impact (visibility), (5) permission barriers (accessibility) and (6) price barriers (cost). These issues are the concerns of non-native English speaking Europeans as they experienced in their home countries. PsychOpen was founded in 2013 on the conclusion that an open-access infrastructure would boost scientific and professional communication in European psychology, especially when Europe's language diversity and the lack of resources at the national level (e.g. in Eastern Europe) are taken into account. For the latter reason, to remove hurdles for developing countries and Eastern Europe, but also for strict separation of economic interests and quality control, PsychOpen is Gold Open Access without any author fees.
+
+In order to accomplish its goals efficiently on a small budget, PsychOpen uses a mix of commercial and open source publishing software like PKP's Open Journal System and Inera's eXtyles. Two years after its start, PsychOpen publishes seven journals: Publication languages are English (> 80\%), Bulgarian (Non-Roman Script), Portuguese, Spanish and German. The scope is mostly research, one journal is devoted to professional topics. The publication type is traditional research articles. The average publishing time is four months. The publication schedule is continuous in one instance and discrete for the other six journals. Submissions per year and journal range from 25–150; rejection rates are 20\%–65\%.
+
+All content is published according to the Creative Commons license CC-BY. Two third of PsychOpen authors have a European affiliation; the remaining one third come from North America, East Asia, South America, Africa and South Pacific (in this order). Usage is up by 44\% from 2014 to 2015 with approx. 50.000 article downloads in mid-2015. Amongst the challenges for PsychOpen that need further work is multilingualism, the interlinking of scholarly content (e.g., research articles with the corresponding research data), the integration of social media and semantic publishing. A new tool for the semantic enhancement for the Open Journal System facilitates the generation of RDF. Resulting self-describing documents for scientific literature in psychology will allow discovering connections amongst papers and concept-based queries. The lack of ontologies and of NLP tools in psychology, but also the poor data infrastructure are hurdles that need to be overcome.
+
+\end{document}
 
 % LocalWords:  Dagstuhl Christoph Weichselgartner biomedical BAM APA
 % LocalWords:  APS Aime LIMICS INSERM Charlet Odile Aimé Informatics
@@ -1275,5 +1306,7 @@ Further ZPID services include the PubPsych information retrieval system and the 
 %  LocalWords:  Poldrack OpenfMRI neuroimaging Burnaby PKP OMP ISNI
 %  LocalWords:  Staemmler SoftwareX MethodsX ordinated VandenBos ZPID
 %  LocalWords:  PsycINFO PsycARTICLES PsycBOOKS PsycTESTS PsycTHERAPY
-%  LocalWords:  Vedatek ZPID's PsychData PsychOpen PubPsych
-%  LocalWords:  PsychAuthors
+%  LocalWords:  Vedatek ZPID's PsychData PsychOpen PubPsych STM DOIs
+%  LocalWords:  PsychAuthors Elsevier's ScienceDirect iPlots Genomics
+%  LocalWords:  ICSU bibliometrics PKP's Inera's eXtyles Amongst NLP
+%  LocalWords:  amongst
